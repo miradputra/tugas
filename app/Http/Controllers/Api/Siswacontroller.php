@@ -126,7 +126,36 @@ class Siswacontroller extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $siswa = siswa::find($id);
+        if (!$siswa) {
+            $response = [
+                'succsess' => false,
+                'data' => 'Empty',
+                'message' => 'siswa tidak di temukan.'
+            ];
+            return response()->json($response, 404);
+        }
+        $validator = Validator::make($input, [
+            'nama' => 'required|min:10'
+        ]);
+
+        if ($validator->fails()) {
+            $response = [
+                'succes' => false,
+                'data' => 'Validation Error.',
+                'message' => $validator->errors()
+            ];
+            return response()->json($response, 500);
+        }
+        $siswa->nama = $input['nama'];
+        $siswa->save();
+
+        $response = [
+            'succsess' => true,
+            'data' => $siswa,
+            'message' => 'Siswa berhasil di update.'
+        ];
+        return response()->json($response, 200);
     }
 
     /**
@@ -137,6 +166,21 @@ class Siswacontroller extends Controller
      */
     public function destroy($id)
     {
-        //
+        $siswa  = siswa::find($id);
+        if (!$siswa) {
+            $response = [
+                'succsess' => false,
+                'data' => 'gagal update',
+                'message' => 'siswa tidak di temukan.'
+            ];
+            return response()->json($response, 404);
+        }
+        $siswa->delete();
+        $response = [
+            'succsess' => true,
+            'data' => $siswa,
+            'message' => 'Siswa berhasil dihapus.'
+        ];
+        return response()->json($response, 200);
     }
 }
