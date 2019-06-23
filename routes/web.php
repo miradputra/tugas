@@ -13,8 +13,29 @@
 
 Route::get('/', function () {
     return view('welcome');
+
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', function () {
+    return view('backend');
+    
+
+});
+Route::get('/archive', function () {
+    return view('archive');
+});
+Route::get('/category', function () {
+    return view('category');
+});
+    Route::get('/elements', function () {
+    return view('elements');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/post-details', function () {
+    return view('post-details');
+});
