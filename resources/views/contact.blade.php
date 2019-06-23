@@ -46,15 +46,15 @@
 					<nav id="nav-menu-container" class="mx-auto">
 						<ul class="nav-menu">
 							<li><a href="/">Home</a></li>
-							<li><a href="archive.">Archive</a></li>
-							<li><a href="category.">Category</a></li>
+							<li><a href="archive">Archive</a></li>
+							<li><a href="category">Category</a></li>
 							<li class="menu-has-children"><a href="">Pages</a>
 								<ul>
-									<li><a href="post-details.">Post Details</a></li>
-									<li><a href="elements.">Elements</a></li>
+									<li><a href="post-details">Post Details</a></li>
+									<li><a href="elements">Elements</a></li>
 								</ul>
 							</li>
-							<li class="menu-active"><a href="contact.html">Contact</a></li>
+							<li class="menu-active"><a href="contact">Contact</a></li>
 						</ul>
 					</nav>
 					<div class="navbar-right ml-auto">
