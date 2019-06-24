@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.index');
 
 });
 
@@ -25,17 +25,17 @@ Route::get('/admin', function () {
 
 });
 Route::get('/archive', function () {
-    return view('archive');
+    return view('frontend.archive');
 });
 Route::get('/category', function () {
-    return view('category');
+    return view('frontend.category');
 });
     Route::get('/elements', function () {
-    return view('elements');
+    return view('frontend.elements');
 });
 Route::get('/contact', function () {
-    return view('contact');
+    return view('frontend.contact');
 });
-Route::get('/post-details', function () {
-    return view('post-details');
+Route::get('/blog-single', function () {
+    return view('frontend.blog-single');
 });

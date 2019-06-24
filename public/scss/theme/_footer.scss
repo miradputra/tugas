@@ -1,133 +1,163 @@
-/* =================================== */
-
-/*  Footer Styles
-/* =================================== */
-
+/* Footer Area css
+============================================================================================ */
 .footer-area {
-    background: #2e2e2e;
-    .single-footer-widget {
-        h6 {
-            font-size: 18px;
-            color: $white;
-            margin-bottom: 30px;
-            &.heading {
-                border-bottom: 1px solid #252525;
-            }
-        }
-        p {
-            margin-right: 15px;
-        }
-        .footer-nav {
-            li {
-                margin-bottom: 12px;
-                a {
-                    color: $text-color;
-                    &:hover {
-                        color: $white;
-                    }
-                }
-            }
-        }
-        @media(max-width:960px) {
-            margin-bottom: 30px;
-        }
-        .footer-news {
-            @media (max-width: 991px) {
-                @include flexbox();
-            }
-            @media (max-width: 380px) {
-                display: block !important;
-            }
-        }
+  background: #000000;
+  h6 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
     }
-    .single-news {
-        margin-bottom: 20px;
-        @media (max-width: 991px) {
-            @include flex-direction(column);
-        }
-        .details {
-            margin-left: 18px;
-            h4 {
-                font-size: 14px;
-                margin-bottom: 16px;
-                line-height: 22px;
-                @include transition();
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-            .meta {
-                .lnr {
-                    margin-right: 10px;
-                }
-                @media (max-width: 991px) {
-                    display: none;
-                }
-            }
-            p {
-                text-transform: uppercase;
-                font-size: 12px;
-            }
-        }
-        @media(max-width:1024px) {
-            img {
-                max-width: 100%;
-            }
-            .details {
-                h4 {
-                    font-size: 13px;
-                    margin-bottom: 0;
-                }
-            }
-        }
-        @media(max-width:991px) {
-            .details {
-                h4 {
-                    margin-right: 30px;
-                }
-            }
-        }
-        @include media-breakpoint-down(md) {
-            .details {
-                margin-top: 20px;
-                margin-left: 0px;
-            }
-        }
-    }
-    .copyright-text {
-        padding: 25px 0;
-        border-top: 1px solid #252525;
-        a {
-            color: $primary-color;
-        }
-        .footer-social {
-            text-align: right;
-            a {
-                color: $text-color;
-                display: inline-block;
-                margin-right: 15px;
-                font-size: 12px;
-                height: 30px;
-                line-height: 30px;
-                width: 30px;
-                background: #252525;
-                text-align: center;
-                &:hover {
-                    color: $white;
-                    background: $primary-color;
-                }
-            }
-        }
-        @media(max-width:572px) {
-            .footer-social {
-                text-align: center;
-                margin-top: 10px;
-            }
-        }
-    }
-    .footer-text {
-        @media(max-width:575px) {
-            margin-bottom: 20px!important;
-        }
-    }
+  }
 }
+
+.copy-right-text {
+  i,
+  a {
+    color: $primary-color;
+  }
+}
+
+.instafeed {
+  margin: -5px;
+  li {
+    overflow: hidden;
+    width: 25%;
+    img {
+      margin: 5px;
+    }
+  }
+}
+
+.footer-social {
+  i {
+    color: #555555;
+    @include transition();
+  }
+  a {
+    padding-right: 25px;
+    @include transition();
+    &:hover {
+      i {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.single-footer-widget {
+  @media (max-width: 991px) {
+    margin-bottom: 40px;
+  }
+  .form-inline {
+    display: inline-block;
+    width: 100%;
+  }
+  input {
+    border: none;
+    width: 80% !important;
+    font-weight: 300;
+    background: #191919;
+    color: #555555;
+    padding-left: 20px;
+    border-radius: 0;
+    font-size: 14px;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    @include placeholder {
+      color: #555555;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+
+  .bb-btn {
+    color: #fff;
+    font-weight: 300;
+    border-radius: 0;
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+  .info {
+    position: absolute;
+    margin-top: 5%;
+    color: #fff;
+    font-size: 12px;
+    &.valid {
+      color: green;
+    }
+    &.error {
+      color: red;
+    }
+  }
+
+  .click-btn {
+    background: #fff;
+    color: $title-color;
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 6px 12px;
+    border: 0;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  ::-moz-selection {
+    /* Code for Firefox */
+    background-color: #191919 !important;
+    color: $text-color;
+  }
+  ::selection {
+    background-color: #191919 !important;
+    color: $text-color;
+  }
+  ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: $text-color;
+    font-weight: 300;
+  }
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: $text-color;
+    opacity: 1;
+    font-weight: 300;
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: $text-color;
+    opacity: 1;
+    font-weight: 300;
+  }
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $text-color;
+    font-weight: 300;
+  }
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $text-color;
+    font-weight: 300;
+  }
+}
+
+.footer-text {
+  padding-top: 80px;
+  @media (max-width: 991px) {
+    padding-top: 0px;
+  }
+  a,
+  i {
+    color: #ffffff;
+  }
+}
+
+/* End Footer Area css
+============================================================================================ */
