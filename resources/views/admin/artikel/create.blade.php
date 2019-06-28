@@ -50,7 +50,7 @@
         </div>
     <div class="form-group">
         <label for="">Kategori</label>
-        <select name="kategori" class="form-control">
+        <select name="nama_kategori " class="form-control">
     @foreach($kategori as $data)
         <option value="{{ $data->id }}">
             {{ $data->nama_kategori }}

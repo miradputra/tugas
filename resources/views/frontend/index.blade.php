@@ -821,6 +821,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
          success : function(berhasil){
            $.each(berhasil.data,function(key,value){
              $("lastest").append
+             `
+             
+             `
            })
          }
        })    

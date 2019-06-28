@@ -31,7 +31,7 @@
                                 <th>No</th>
                                 <th>Judul</th>
                                 <th>Foto</th>
-                                {{--  <th>Konten</th>  --}}
+                                 <th>Konten</th> 
                                 <th>Tag</th>
                                 <th>Kategori</th>
                                 <th clospan="3" style="text-align: center;">Aksi</th>
@@ -42,7 +42,7 @@
                     <td>{{ $no++ }}</td>
                     <td>{{ $data->judul }}</td>
                     <td><img src="{{ asset('assets/img/artikel/'.$data->foto) }}" alt="" height="500px" width="500px"></td>
-                    {{--  <td>{!! $data->konten !!}</td>  --}}
+                     <td>{ $data-> konten }</td> 
                     <td>
                         @foreach ($data->tag as $a)
                             {{ $a->nama_tag }}

@@ -8,6 +8,7 @@ use App\tag;
 use App\artikel;
 use Session;
 use Auth;
+use App\User;
 use Illuminate\Support\Facades\File;
 use Illuminate\Queue\Jobs\SyncJob;
 
@@ -44,27 +45,28 @@ class ArtikelController extends Controller
      */
     public function store(Request $request)
     {
-         $this->validate($request,[
-            'judul' => 'required|unique:artikels',
-            'konten' => 'required',
-            'foto' => 'required|mimes:jpeg.jpg.png.gif|required|max:2048',
-            'id_kategori' => 'required',
-            'id_tag' => 'required'
-            ]);
+        //   $this->validate($request,[
+
+        //      'judul' => 'required|unique:artikels',
+        //      'konten' => 'required',
+        //      'foto' => 'required|mimes:jpeg.jpg.png.gif|required|max:2048',
+        //      'nama_kategori' => 'required',
+        //      'id_tag' => 'required'
+        //      ]);
 
         $artikel = new artikel();
         $artikel->judul = $request->judul;
         $artikel->slug = str_slug($request->judul, '-');
         $artikel->konten = $request->konten;
-        $artikel->id_user = Auth::user()->id;
-        $artikel->id_kategori = $request->kategori;
+        $artikel->id_user = Auth::User()->id;
+        $artikel->id_kategori = $request->nama_kategori;
             //foto
         if ($request->hasFile('foto')) {
              $file = $request->file('foto');
             $destinationPath = public_path() . '/assets/img/artikel/';
             $filename = str_random(6) . '_' 
             . $file->getClientOriginalName();
-            $upload= $file->move($path,$filename);
+            $upload= $file->move($destinationPath,$filename);
             $artikel->foto = $filename;
         }
 
@@ -74,7 +76,7 @@ class ArtikelController extends Controller
             "level" => "success",
             "message" => "Berhasil menyimpan data artikel berjudul <b>$artikel->judul</b>"
         ]);
-        return redirect()->route('admin.artikel.index');
+        return view('admin.artikel.index');
     }
 
     /**
@@ -176,6 +178,6 @@ class ArtikelController extends Controller
             "level" => "danger",
             "message" => "Berhasil menghapus data artikel berjudul <b>$artikel->judul</b>"
         ]);
-        return redirect()->route('admin.artikel.index');
+        return redirect()->route('artikel.index');
     }
 }
