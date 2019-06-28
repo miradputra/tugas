@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- Favicon-->
-    <link rel="shortcut icon" href="img/fav.png" />
+    <link rel="shortcut icon" href="{{asset('frontend/img/fav.png')}}" />
     <!-- Author Meta -->
     <meta name="author" content="CodePixar" />
     <!-- Meta Description -->
@@ -26,15 +26,15 @@
     <!--
 			CSS
 			============================================= -->
-    <link rel="stylesheet" href="css/linearicons.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/nice-select.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
-    <link rel="stylesheet" href="css/themify-icons.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="{{asset('frontend/css/linearicons.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/magnific-popup.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/nice-select.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/bootstrap-datepicker.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/themify-icons.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/main.css')}}" />
   </head>
 
   <body>
@@ -54,7 +54,7 @@
               <span class="logo-outer">
                 <span class="logo-inner">
                   <a href="/"
-                    ><img class="mx-auto" src="img/logo.png" alt=""
+                    ><img class="mx-auto" src="{{asset('frontend/img/logo.png')}}" alt=""
                   /></a>
                 </span>
               </span>
@@ -282,14 +282,14 @@
             <div class="single-footer-widget mail-chimp">
               <h6 class="mb-20">Instragram Feed</h6>
               <ul class="instafeed d-flex flex-wrap">
-                <li><img src="img/instagram/i1.jpg" alt="" /></li>
-                <li><img src="img/instagram/i2.jpg" alt="" /></li>
-                <li><img src="img/instagram/i3.jpg" alt="" /></li>
-                <li><img src="img/instagram/i4.jpg" alt="" /></li>
-                <li><img src="img/instagram/i5.jpg" alt="" /></li>
-                <li><img src="img/instagram/i6.jpg" alt="" /></li>
-                <li><img src="img/instagram/i7.jpg" alt="" /></li>
-                <li><img src="img/instagram/i8.jpg" alt="" /></li>
+                <li><img src="{{asset('frontend/img/instagram/i1.jpg')}}" alt="" /></li>
+                <li><img src="{{asset('frontend/img/instagram/i2.jpg')}}" alt="" /></li>
+                <li><img src="{{asset('frontend/img/instagram/i3.jpg')}}" alt="" /></li>
+                <li><img src="{{asset('frontend/img/instagram/i4.jpg')}}" alt="" /></li>
+                <li><img src="{{asset('frontend/img/instagram/i5.jpg')}}" alt="" /></li>
+                <li><img src="{{asset('frontend/img/instagram/i6.jpg')}}" alt="" /></li>
+                <li><img src="{{asset('frontend/img/instagram/i7.jpg')}}" alt="" /></li>
+                <li><img src="{{asset('frontend/img/instagram/i8.jpg')}}" alt="" /></li>
               </ul>
             </div>
           </div>
@@ -319,25 +319,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
     <!--================ End Footer Area =================-->
 
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="{{asset('frontend/js/vendor/jquery-2.2.4.min.js')}}"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
       integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
       crossorigin="anonymous"
     ></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.tabs.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="{{asset('frontend/js/vendor/bootstrap.min.js')}}"></script>
+    <script src="{{asset('frontend/js/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.sticky.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.tabs.min.js')}}"></script>
+    <script src="{{asset('frontend/js/parallax.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.nice-select.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.ajaxchimp.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.magnific-popup.min.js')}}"></script>
     <script
       type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"
     ></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{asset('frontend/js/bootstrap-datepicker.js')}}"></script>
+    <script src="{{asset('frontend/js/main.js')}}"></script>
   </body>
 </html>

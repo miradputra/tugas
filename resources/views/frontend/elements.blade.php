@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- Favicon-->
-    <link rel="shortcut icon" href="img/fav.png" />
+    <link rel="shortcut icon" href="{{asset('frontend/img/fav.png')}}" />
     <!-- Author Meta -->
     <meta name="author" content="CodePixar" />
     <!-- Meta Description -->
@@ -26,15 +26,15 @@
     <!--
 			CSS
 			============================================= -->
-    <link rel="stylesheet" href="css/linearicons.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/nice-select.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
-    <link rel="stylesheet" href="css/themify-icons.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="{{asset('frontend/css/linearicons.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/magnific-popup.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/nice-select.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/bootstrap-datepicker.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/themify-icons.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/main.css')}}" />
   </head>
 
   <body>
@@ -54,7 +54,7 @@
               <span class="logo-outer">
                 <span class="logo-inner">
                   <a href="/"
-                    ><img class="mx-auto" src="img/logo.png" alt=""
+                    ><img class="mx-auto" src="{{asset('frontend/img/logo.png')}}" alt=""
                   /></a>
                 </span>
               </span>
@@ -260,7 +260,7 @@
 				<h3 class="mb-30">Left Aligned</h3>
 				<div class="row">
 					<div class="col-md-3">
-						<img src="img/elements/d.jpg" alt="" class="img-fluid">
+						<img src="{{asset('frontend/img/elements/d.jpg')}}" alt="" class="img-fluid">
 					</div>
 					<div class="col-md-9 mt-sm-20 left-align-p">
 						<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to
@@ -301,7 +301,7 @@
 							a little about what symptoms</p>
 					</div>
 					<div class="col-md-3">
-						<img src="img/elements/d.jpg" alt="" class="img-fluid">
+						<img src="{{asset('frontend/img/elements/d.jpg')}}" alt="" class="img-fluid">
 					</div>
 				</div>
 			</div>
@@ -373,7 +373,7 @@
 						</div>
 						<div class="table-row">
 							<div class="serial">01</div>
-							<div class="country"> <img src="img/elements/f1.jpg" alt="flag">Canada</div>
+							<div class="country"> <img src="{{asset('frontend/img/elements/f1.jpg')}}" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
 								<div class="progress">
@@ -384,7 +384,7 @@
 						</div>
 						<div class="table-row">
 							<div class="serial">02</div>
-							<div class="country"> <img src="img/elements/f2.jpg" alt="flag">Canada</div>
+							<div class="country"> <img src="{{asset('frontend/img/elements/f2.jpg')}}" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
 								<div class="progress">
@@ -395,7 +395,7 @@
 						</div>
 						<div class="table-row">
 							<div class="serial">03</div>
-							<div class="country"> <img src="img/elements/f3.jpg" alt="flag">Canada</div>
+							<div class="country"> <img src="{{asset('frontend/img/elements/f3.jpg')}}" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
 								<div class="progress">
@@ -406,7 +406,7 @@
 						</div>
 						<div class="table-row">
 							<div class="serial">04</div>
-							<div class="country"> <img src="img/elements/f4.jpg" alt="flag">Canada</div>
+							<div class="country"> <img src="{{asset('frontend/img/elements/f4.jpg')}}" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
 								<div class="progress">
@@ -417,7 +417,7 @@
 						</div>
 						<div class="table-row">
 							<div class="serial">05</div>
-							<div class="country"> <img src="img/elements/f5.jpg" alt="flag">Canada</div>
+							<div class="country"> <img src="{{asset('frontend/img/elements/f5.jpg')}}" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
 								<div class="progress">
@@ -428,7 +428,7 @@
 						</div>
 						<div class="table-row">
 							<div class="serial">06</div>
-							<div class="country"> <img src="img/elements/f6.jpg" alt="flag">Canada</div>
+							<div class="country"> <img src="{{asset('frontend/img/elements/f6.jpg')}}" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
 								<div class="progress">
@@ -439,7 +439,7 @@
 						</div>
 						<div class="table-row">
 							<div class="serial">07</div>
-							<div class="country"> <img src="img/elements/f7.jpg" alt="flag">Canada</div>
+							<div class="country"> <img src="{{asset('frontend/img/elements/f7.jpg')}}" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
 								<div class="progress">
@@ -450,7 +450,7 @@
 						</div>
 						<div class="table-row">
 							<div class="serial">08</div>
-							<div class="country"> <img src="img/elements/f8.jpg" alt="flag">Canada</div>
+							<div class="country"> <img src="{{asset('frontend/img/elements/f8.jpg')}}" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
 								<div class="progress">
@@ -466,43 +466,43 @@
 				<h3>Image Gallery</h3>
 				<div class="row gallery-item">
 					<div class="col-md-4">
-						<a href="img/elements/g1.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g1.jpg);"></div>
+						<a href="{{asset('frontend/img/elements/g1.jpg')}}" class="img-gal">
+							<div class="single-gallery-image" style="background: url(frontend/img/elements/g1.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-4">
-						<a href="img/elements/g2.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g2.jpg);"></div>
+						<a href="{{asset('frontend/img/elements/g2.jpg')}}" class="img-gal">
+							<div class="single-gallery-image" style="background: url(frontend/img/elements/g2.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-4">
-						<a href="img/elements/g3.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g3.jpg);"></div>
+						<a href="{{asset('frontend/img/elements/g3.jpg')}}" class="img-gal">
+							<div class="single-gallery-image" style="background: url(frontend/img/elements/g3.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-6">
-						<a href="img/elements/g4.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g4.jpg);"></div>
+						<a href="{{asset('frontend/img/elements/g4.jpg')}}" class="img-gal">
+							<div class="single-gallery-image" style="background: url(frontend/img/elements/g4.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-6">
-						<a href="img/elements/g5.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g5.jpg);"></div>
+						<a href="{{asset('frontend/img/elements/g5.jpg')}}" class="img-gal">
+							<div class="single-gallery-image" style="background: url(frontend/img/elements/g5.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-4">
-						<a href="img/elements/g6.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g6.jpg);"></div>
+						<a href="{{asset('frontend/img/elements/g6.jpg')}}" class="img-gal">
+							<div class="single-gallery-image" style="background: url(frontend/img/elements/g6.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-4">
-						<a href="img/elements/g7.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g7.jpg);"></div>
+						<a href="{{asset('frontend/img/elements/g7.jpg')}}" class="img-gal">
+							<div class="single-gallery-image" style="background: url(frontend/img/elements/g7.jpg);"></div>
 						</a>
 					</div>
 					<div class="col-md-4">
-						<a href="img/elements/g8.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g8.jpg);"></div>
+						<a href="{{asset('frontend/img/elements/g8.jpg')}}" class="img-gal">
+							<div class="single-gallery-image" style="background: url(frontend/img/elements/g8.jpg);"></div>
 						</a>
 					</div>
 				</div>
@@ -810,14 +810,14 @@
 			  <div class="single-footer-widget mail-chimp">
 				<h6 class="mb-20">Instragram Feed</h6>
 				<ul class="instafeed d-flex flex-wrap">
-				  <li><img src="img/instagram/i1.jpg" alt="" /></li>
-				  <li><img src="img/instagram/i2.jpg" alt="" /></li>
-				  <li><img src="img/instagram/i3.jpg" alt="" /></li>
-				  <li><img src="img/instagram/i4.jpg" alt="" /></li>
-				  <li><img src="img/instagram/i5.jpg" alt="" /></li>
-				  <li><img src="img/instagram/i6.jpg" alt="" /></li>
-				  <li><img src="img/instagram/i7.jpg" alt="" /></li>
-				  <li><img src="img/instagram/i8.jpg" alt="" /></li>
+				  <li><img src="{{asset('frontend/img/instagram/i1.jpg')}}" alt="" /></li>
+				  <li><img src="{{asset('frontend/img/instagram/i2.jpg')}}" alt="" /></li>
+				  <li><img src="{{asset('frontend/img/instagram/i3.jpg')}}" alt="" /></li>
+				  <li><img src="{{asset('frontend/img/instagram/i4.jpg')}}" alt="" /></li>
+				  <li><img src="{{asset('frontend/img/instagram/i5.jpg')}}" alt="" /></li>
+				  <li><img src="{{asset('frontend/img/instagram/i6.jpg')}}" alt="" /></li>
+				  <li><img src="{{asset('frontend/img/instagram/i7.jpg')}}" alt="" /></li>
+				  <li><img src="{{asset('frontend/img/instagram/i8.jpg')}}" alt="" /></li>
 				</ul>
 			  </div>
 			</div>
@@ -847,25 +847,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	  </footer>
 	  <!--================ End Footer Area =================-->
   
-	  <script src="js/vendor/jquery-2.2.4.min.js"></script>
+	  <script src="{{asset('frontend/js/vendor/jquery-2.2.4.min.js')}}"></script>
 	  <script
 		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
 		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 		crossorigin="anonymous"
 	  ></script>
-	  <script src="js/vendor/bootstrap.min.js"></script>
-	  <script src="js/owl.carousel.min.js"></script>
-	  <script src="js/jquery.sticky.js"></script>
-	  <script src="js/jquery.tabs.min.js"></script>
-	  <script src="js/parallax.min.js"></script>
-	  <script src="js/jquery.nice-select.min.js"></script>
-	  <script src="js/jquery.ajaxchimp.min.js"></script>
-	  <script src="js/jquery.magnific-popup.min.js"></script>
+	  <script src="{{asset('frontend/js/vendor/bootstrap.min.js')}}"></script>
+	  <script src="{{asset('frontend/js/owl.carousel.min.js')}}"></script>
+	  <script src="{{asset('frontend/js/jquery.sticky.js')}}"></script>
+	  <script src="{{asset('frontend/js/jquery.tabs.min.js')}}"></script>
+	  <script src="{{asset('frontend/js/parallax.min.js')}}"></script>
+	  <script src="{{asset('frontend/js/jquery.nice-select.min.js')}}"></script>
+	  <script src="{{asset('frontend/js/jquery.ajaxchimp.min.js')}}"></script>
+	  <script src="{{asset('frontend/js/jquery.magnific-popup.min.js')}}"></script>
 	  <script
 		type="text/javascript"
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"
 	  ></script>
-	  <script src="js/bootstrap-datepicker.js"></script>
-	  <script src="js/main.js"></script>
+	  <script src="{{asset('frontend/js/bootstrap-datepicker.js')}}"></script>
+	  <script src="{{asset('frontend/js/main.js')}}"></script>
 	</body>
   </html>

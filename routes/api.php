@@ -19,3 +19,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
    Route::resource('siswa','Api\Siswacontroller');
 
+   Route::resource('Kategori','Api\Kategoricontroller');
+
+    Route::resource('tag','Api\Tagcontroller');
+
+

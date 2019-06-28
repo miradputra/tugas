@@ -13,17 +13,24 @@
 
 Route::get('/', function () {
     return view('frontend.index');
-
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/admin', function () {
-    return view('backend');
-    
 
+    Route::get('/admin', function () {
+    return view('backend');
 });
+
+Route::get('dashboardfrontend', function () {
+    return view('dashboardfrontend');
+});
+Route::resource('kategori', 'KategoriController');
+Route::resource('tag', 'TagController');
+Route::resource('artikel', 'ArtikelController');
+
+
 Route::get('/archive', function () {
     return view('frontend.archive');
 });
